@@ -1,0 +1,167 @@
+body {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  overflow: hidden;
+
+  width: 31.3%;
+  min-height: 696px;
+
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+
+  background-color: hsl(225, 100%, 98%);
+
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.order-summary {
+  margin-top: 20.3px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 14.5px;
+
+  color: hsl(223, 47%, 23%);
+}
+
+.order-details {
+  margin: 0px;
+  margin-bottom: 20px;
+
+  width: 65%;
+
+  line-height: 1.7;
+  letter-spacing: 0.7px;
+}
+
+.plan {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-icon {
+  padding-left: 27px;
+  padding-top: 11px;
+}
+
+.plan-info {
+  padding-right: 70px;
+  padding-top: 8.9px;
+
+  font-size: 11px;
+}
+
+.plan-price {
+  font-size: 16.4px;
+
+  margin-top: -9px;
+}
+
+.change-plan {
+  text-decoration: underline;
+
+  margin-right: 26px;
+  margin-top: 9px;
+
+  border: none;
+
+  font-size: 15px;
+
+  color: hsl(245, 75%, 52%);
+}
+
+.proceed {
+  transition: all 0.4ms;
+
+  width: 79%;
+
+  border: 2px solid hsl(245, 75%, 52%);
+  border-radius: 13px;
+
+  margin-top: 42px;
+  margin-bottom: 30px;
+
+  line-height: 3.4;
+  letter-spacing: 0.9px;
+  font-weight: bold; /*change to numbers*/
+
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+
+  cursor: pointer;
+}
+
+.proceed:hover {
+  transition: all 0.4ms;
+
+  background-color: hsl(224, 23%, 55%);
+
+  border-color: hsl(224, 23%, 55%);
+}
+
+.cancel-order {
+  width: 100%;
+
+  background: transparent;
+
+  border: none;
+
+  cursor: pointer;
+
+  letter-spacing: 1.7px;
+  font-weight: 500;
+}
+
+/*Mobile Design*/
+
+@media (max-width: 1100px) {
+  .container {
+    width: 87%;
+    min-height: 565px;
+  }
+
+  h1 {
+    font-size: 22px;
+    letter-spacing: 0.4px;
+  }
+
+  .order-details {
+    width: 85%;
+  }
+
+  .proceed {
+    width: 85%;
+    margin: 0;
+  }
+}
